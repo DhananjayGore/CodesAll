@@ -1,0 +1,7 @@
+abs(12)
+abs(-12)
+bool(0)
+bool(23)
+bool(-12)
+bool(None)
+bool()
