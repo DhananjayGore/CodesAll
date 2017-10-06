@@ -1,0 +1,5 @@
+(define (chek_date list1)
+	(cond (if  (and (< dd 32) (< mm 13) (< yy 2016) (> yy 0))
+		((if ()))
+                 "invalid date")
+))

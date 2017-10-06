@@ -1,0 +1,25 @@
+;list is like((dd mm yyyy) (dd mm yyyy)........)
+(define (list_of_valid_birthday ls2)
+      (cond ((null? ls2) '())
+            ((eq? (date_vality (car ls2)) #t) (cons (car ls2) (list_of_valid_birthday (cdr ls2))))
+            ((eq? (date_vality (car ls2)) #f) (list_of_valid_birthday (cdr ls2)))
+            (else (list_of_valid_birthday (cdr ls2)))))
+            
+            
+;list is like(dd mm yyyy)
+(define (date_vality ls1)
+       (cond ((null? ls1) "please enter any date inside list")
+             ((or (< (caddr ls1) 1) (< (cadr ls1) 1) (> (cadr ls1) 12) (< (car ls1) 0) 
+                  (> (car ls1) 31)) #f)
+             ((and (or (= (cadr ls1) 1) (= (cadr ls1) 3) (= (cadr ls1) 5) (= (cadr ls1) 7) 
+                   (= (cadr ls1) 8) (= (cadr ls1) 10) (= (cadr ls1) 12))) #t)
+             ((and (or (= (cadr ls1) 4) (= (cadr ls1) 6) (= (cadr ls1) 9) (= (cadr ls1) 11)) 
+                   (< (car ls1) 31)) #t)
+             ((and (= (cadr ls1) 2)
+                   (or (= (remainder (caddr ls1) 400) 0) 
+                   (and  (= (remainder (caddr ls1) 4) 0) (not (= (remainder (caddr ls1) 100) 0))))
+                   (< (car ls1) 30)) #t)
+             ((and (= (cadr ls1) 2) (< (car ls1) 29)) #t)
+             (else #f)))
+             
+

@@ -1,0 +1,12 @@
+ (define (smallest a b)
+        (if (a<b)
+        a
+        b))
+(define (smallest-of-list ls)
+        (cond 
+        	((null? ls) 'empty list)
+        	((null? (cdr ls)) (car ls))
+        	(else(smallest-of-list(cons(smallest(car ls)(cdr ls))(cdr ls))))
+	)
+)	
+
