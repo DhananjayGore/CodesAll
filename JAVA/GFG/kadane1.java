@@ -12,6 +12,7 @@ public class kadane1 {
 		int b[]=new int[l];int i;
 
 		int cmax,gmax;cmax=gmax=a[0];
+
 		b[0]=a[0];
 
 		for (i=1;i<l;i++) 
@@ -24,10 +25,12 @@ public class kadane1 {
 		}
 
 		}
+
 		for(int j:a)
 			System.out.print(j+" ");
 
 		System.out.println();
+		
 		for(int j:b)
 			System.out.print(j+" ");
 		System.out.println();

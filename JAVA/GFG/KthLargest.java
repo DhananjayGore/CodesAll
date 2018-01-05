@@ -5,7 +5,7 @@ import java.io.*;
 public class KthLargest {
 	public static void main (String[] args) {
 		//code
-		Scanner sc =new Scanner(System.in);
+                Scanner sc =new Scanner(System.in);
 		int t = sc.nextInt();
 		while(t-->0){
 		    int size = sc.nextInt();

@@ -5,7 +5,7 @@ public class minmRadiusForK {
 	public static void main(String[] args) {
 	int k = 3;
   	int x[] = { 1, -1, 1 };
-  	int y[] = { 1, -1, -1 };
+  	int y[] = { 1, -1, -1};
 
   	int n=x.length;
 
