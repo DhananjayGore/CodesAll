@@ -21,10 +21,10 @@ public class SelectionSort{
 				}
 			}
 			if (min != i) {
-					int temp=a[i];
-					a[i]=a[min];
-					a[min]=temp;
-				}
+				int temp=a[i];
+				a[i]=a[min];
+				a[min]=temp;
+			}
 		}
 		for (int i=0;i<n;i++) {
 			System.out.print(a[i]+" ");
