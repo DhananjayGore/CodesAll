@@ -8,7 +8,9 @@ class LinkedList
     {
         char data;
         Node next;
-        Node(char d) {data = d; next = null; }
+        Node(char d) {
+            data = d; next = null; 
+        }
     }
  
                      

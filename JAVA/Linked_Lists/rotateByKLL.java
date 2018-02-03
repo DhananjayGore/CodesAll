@@ -43,7 +43,7 @@ class rotateByKLL
 		{
 			temp=temp.next;
 			count++;
-			System.out.print("l1 ");
+			// System.out.print("l1 ");
 		}
 
 		if(temp==null)
@@ -56,7 +56,7 @@ class rotateByKLL
 		while(temp.next!=null)
 		{
 			temp=temp.next;
-			System.out.print("l2 ");
+			// System.out.print("l2 ");
 		}
 
 		temp.next=head;

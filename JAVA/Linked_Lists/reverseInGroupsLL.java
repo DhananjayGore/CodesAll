@@ -1,8 +1,7 @@
 import java.util.*;
 public class reverseInGroupsLL
 {
-	class Node
-	{
+	class Node{
 	int data;
 	Node next;
 
@@ -11,18 +10,17 @@ public class reverseInGroupsLL
 		data=x;
 		next=null;
 	}
-	}
+}
 
 	Node head;
-	void insert(int x)
-    {
+
+	void insert(int x){
     Node newnode= new Node(x);
     newnode.next=head;
     head=newnode;
-    }
+}
     ////////////////////////////////////////////////////////////////////
-    void printlist()
-    {
+    void printlist(){
         Node n=new Node(-1);
         n=head;
     while(n!=null)

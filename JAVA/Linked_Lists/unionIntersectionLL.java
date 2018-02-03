@@ -37,7 +37,7 @@ class unionIntersectionLL
 	{
 		System.out.println("union");
 		HashSet<Integer> hs=new HashSet<Integer>();
-		Stack<Integer> s1=new Stack<Integer>();
+		// Stack<Integer> s1=new Stack<Integer>();
 		while(root1!=null || root2!=null)
 		{
 			if (root1!=null) 
@@ -53,25 +53,6 @@ class unionIntersectionLL
 			
 		}
 
-		// while(root1!=null )
-		// {
-		// 	if (root1!=null) 
-		// 	{
-		// 	hs.add(root1.data);	
-		// 	}
-		// 	root1=root1.next;
-		// }
-
-		// while(root2!=null)
-		// {
-		// 	if (root2!=null) 
-		// 	{
-		// 	hs.add(root2.data);	
-		// 	}
-		// 	root2=root2.next;
-		// }
-
-
 		Iterator<Integer> i=hs.iterator();
 
 		while(i.hasNext())
@@ -80,10 +61,12 @@ class unionIntersectionLL
 		}
 		System.out.println();
 	}
+
+	
 	void intersect(Node root1,Node root2)
 	{
 		HashSet<Integer> hs=new HashSet<Integer>();
-		Stack<Integer> s1=new Stack<Integer>();
+		// Stack<Integer> s1=new Stack<Integer>();
 		System.out.println("intersection");
 		while(root1!=null )
 		{
