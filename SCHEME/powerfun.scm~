@@ -1,5 +1,0 @@
-(define (exp-fun x y)
-	(cond ((and (= y 0) (= x 0)) "meaning less")
-	      ((= x 0) 0)
-	      ((= y 0) 1)
-	      (else (* x (exp-fun x (- y 1))))))
