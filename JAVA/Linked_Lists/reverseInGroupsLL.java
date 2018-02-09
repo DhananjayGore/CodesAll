@@ -34,32 +34,29 @@ public class reverseInGroupsLL
 
 	Node reverseX(Node root,int k)
 	{
+
 		Node p=root;
 
 		Node curr=root;
 		Node prev=null;
 		Node next=null;
 		Node temp=null;
-		int count=0;
-		while(count!=k && curr!=null)
-		{
-			if (count==0) 
-			{
-			temp=curr;	
+		int i=0;
+
+		while (i!=k && curr!=null) {
+			if (i==0) {
+				temp=curr;
 			}
 			next=curr.next;
 			curr.next=prev;
 			prev=curr;
 			curr=next;
-			count++;
+			i++;
 		}
-		if (count == k) 
-			{
-				temp.next=reverseX(curr,k);
-			}
+		if (i==k) {
+			temp.next=reverseX(curr,k);
+		}
 		return prev;
-
-		//int count=0;
 	}
 
 	public static void main(String[] args) {
@@ -72,7 +69,7 @@ public class reverseInGroupsLL
         if(x!= -1)
         l.insert(x);
         }
-        l.printlist();
+        // l.printlist();
         l.head=l.reverseX(l.head,3);
         l.printlist();
 	}

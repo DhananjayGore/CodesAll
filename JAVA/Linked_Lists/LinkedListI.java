@@ -24,6 +24,7 @@ public class LinkedListI {
     next=null;
     }
     }
+    
     Node head;
     /////////////////////////////////////////////////////////////////////
     void insert(int x)

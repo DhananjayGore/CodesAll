@@ -98,7 +98,7 @@ public class deleteRepeatInSortedLL
 				{
 					prev=end;
 					end=end.next;
-					System.out.print("inner");
+					// System.out.print("inner");
 				}
 
 				if (end!=null) {
