@@ -3,14 +3,25 @@ import java.util.*;
 
 public class sortAbsDiff{
 
-	static  int[] sortAD(int a[],int s,int k)
+	static  Integer[] sortAD(Integer[] a,int s,int k)
 	{
-		
+		Arrays.sort(a,new Comparator<Integer>(){
+			public int compare(Integer x,Integer y)
+			{
+				if (Math.abs(x-k)>Math.abs(y-k)) {
+					return 1;
+				}
+				else {
+					return -1;
+				}
+			}
+		});
+		return a;
 	}
 
 	public static void main(String[] args) {
-		int s=5;
-		 int a[] = {10, 5, 3, 9 ,2};
+			int s=5;
+		 Integer[] a= {10, 5, 3, 9 ,2};
 		 s=a.length;
 
 		 int k=7;

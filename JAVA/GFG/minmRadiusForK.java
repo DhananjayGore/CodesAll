@@ -15,6 +15,7 @@ public class minmRadiusForK {
   	{
   	a[i]=(x[i]*x[i])+(y[i]*y[i]);	
   	}
+    Arrays.sort(a);
 
   	System.out.print(a[k-1]);
 		

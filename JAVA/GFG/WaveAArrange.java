@@ -14,7 +14,8 @@ public class WaveAArrange{
 				max_index--;
 			}
 			else{
-				a[i]=a[i]+(a[min_index]%max)*max;
+				// a[i]=a[i]+(a[min_index]%max)*max;
+				a[i]+=(a[min_index]%max)*max;
 				min_index++;
 			}
 		}

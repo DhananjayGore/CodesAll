@@ -21,7 +21,7 @@ public class TrapRain
 	 
 	 private static int TRW(int[] arr){
 	     int[] left = new int[arr.length];
-	     int right[] = new int[arr.length];
+	     int[] right= new int[arr.length];
 
 	     int sum=0;
 	     left[0]=arr[0];

@@ -82,5 +82,3 @@ public class rotateMat
         displayMatrix(N,mat);
     }
 }
- 
-// This code is contributed by Prakriti Gupta

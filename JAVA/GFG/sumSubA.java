@@ -37,7 +37,7 @@ public class sumSubA
  
     public static void main(String[] args) 
     {
-        SubarraySum arraysum = new SubarraySum();
+        sumSubA arraysum = new sumSubA();
         int arr[] = {15, 2, 4, 8, 9, 5, 10, 23};
         int n = arr.length;
         int sum = 23;
@@ -45,4 +45,3 @@ public class sumSubA
     }
 }
  
-// This code has been contributed by Mayank Jaiswal(mayank_24)

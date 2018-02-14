@@ -24,17 +24,16 @@ public class sortByFreq
 			}
 		}
 
+		
 		Collections.sort(b,new Comparator<Integer>()
 		{
 			@Override
 			public int compare(Integer x,Integer y)
 			{
-				if (hm.get(x) > hm.get(y)) 
-				{
+				if (hm.get(x) > hm.get(y)){
 				return -1;	
 				}
-				else
-				{
+				else{
 				return 1;
 				}
 			}

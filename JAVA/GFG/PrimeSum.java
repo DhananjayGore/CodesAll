@@ -3,7 +3,7 @@ import java.lang.*;
 import java.io.*;
 
 public class PrimeSum{
-
+//A Number and a pair of primes to sum it
 static void finder(int t){
 	int i=1,flag=0;
 	while(i <= t/2){
